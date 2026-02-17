@@ -20,9 +20,8 @@
 ## 🛠 使用技術
 
 - フロントエンド: HTML / CSS / JavaScript
-- バックエンド: Node.js / Express（※使用技術に合わせて変更）
-- データベース: （例: Firebase / MongoDB など）
-- 認証: （実装していれば記載）
+- バックエンド: Node.js / Express
+- 認証: replit Auth
 
 ---
 
