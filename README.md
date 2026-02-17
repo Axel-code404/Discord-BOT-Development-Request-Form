@@ -36,9 +36,7 @@
 ---
 
 ## 🚀 セットアップ方法
-
-### 1. リポジトリをクローン
-
-```bash
-git clone https://github.com/あなたのユーザー名/discord-bot-request-platform.git
-cd discord-bot-request-platform
+そのまま転載を防ぐため、クローンではセットアップできないようにしています。
+実際に稼働しているものがこちら
+↓↓↓
+https://discord-bot-hub--wefetb.replit.app/
