@@ -39,4 +39,5 @@
 そのまま転載を防ぐため、クローンではセットアップできないようにしています。
 実際に稼働しているものがこちら
 ↓↓↓
-https://discord-bot-hub--wefetb.replit.app/
+
+- https://discord-bot-hub--wefetb.replit.app/
