@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 30% 4%; /* #05050d - Deep Space */
+  --foreground: 210 40% 98%;
+
+  --card: 240 25% 6%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 240 25% 6%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 180 100% 50%; /* #00F3FF - Cyan Neon */
+  --primary-foreground: 240 30% 4%;
+
+  --secondary: 283 100% 54%; /* #BC13FE - Magenta Neon */
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 240 20% 12%;
+  --muted-foreground: 215 20% 65%;
+
+  --accent: 180 100% 75%; /* Electric Blue */
+  --accent-foreground: 240 30% 4%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 240 20% 15%;
+  --input: 240 20% 15%;
+  --ring: 180 100% 50%;
+
+  --radius: 0.5rem;
+  
+  /* Custom Fonts */
+  --font-sci-fi: 'Orbitron', sans-serif;
+  --font-tech: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(20, 20, 40, 0.5) 0%, rgba(5, 5, 13, 1) 100%);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sci-fi);
+    @apply tracking-wider uppercase;
+  }
+}
+
+@layer utilities {
+  .font-sci-fi {
+    font-family: var(--font-sci-fi);
+  }
+  .font-tech {
+    font-family: var(--font-tech);
+  }
+  
+  .text-neon-cyan {
+    text-shadow: 0 0 5px rgba(0, 243, 255, 0.5), 0 0 10px rgba(0, 243, 255, 0.3);
+  }
+  
+  .text-neon-magenta {
+    text-shadow: 0 0 5px rgba(188, 19, 254, 0.5), 0 0 10px rgba(188, 19, 254, 0.3);
+  }
+  
+  .border-neon-cyan {
+    box-shadow: 0 0 5px rgba(0, 243, 255, 0.2), inset 0 0 5px rgba(0, 243, 255, 0.1);
+  }
+
+  .glass-panel {
+    @apply bg-background/60 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+  .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(5, 5, 13, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 243, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 243, 255, 0.6);
+}
